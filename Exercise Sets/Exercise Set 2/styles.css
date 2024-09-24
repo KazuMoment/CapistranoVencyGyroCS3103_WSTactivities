@@ -41,12 +41,20 @@ body{
 
 .item{
     width: 250px;
-    height: 150px;
+    height: 160px;
+    margin: 15px;
     background-color: rgb(255, 255, 255);
-    padding: 1em;
+    padding: 10px;
     font-weight: 700;
     color: var(--clr-dark);
     text-align: center;
     border: 5px solid var(--clr-accent);
-    border-radius: 3px;    
+    border-radius: 3px;   
+    box-shadow: 5px 5px #5c7c83;
+}
+
+@media (max-width: 800px){
+    .container{
+        flex-direction: column;
+    }
 }
