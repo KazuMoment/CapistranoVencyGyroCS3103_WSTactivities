@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Pixelify+Sans:wght@400..700&family=Silkscreen:wght@400;700&display=swap');
+
+:root {
+    --clr-black: #0f172a;
+    --clr-light: #FFE0B5;
+    --clr-light-text: #0f172a; 
+    --clr-accent: #252627;
+    --clr-darkAccent: #CA2E55;
+    --clr-blue: #53B3DC;
+    --clr-dark-bg: #121212; 
+    --clr-dark-text: #ffffff;
+    --clr-dark-border: #3EFAFA;
+}
+
+body {
+    font-family: 'Pixelify Sans', Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    word-spacing: 1.4px;
+    color: var(--clr-black);
+    background-color: var(--clr-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 14px;
+    transition: all 0.3s ease-in-out; 
+}
+
+.container {
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.title {
+    font-size: 24px;
+    letter-spacing: 1.5px;
+}
+
+.subtitle {
+    font-size: 13px;
+}
+
+.item {
+    width: 250px;
+    height: 160px;
+    margin: 15px;
+    background-color: var(--clr-blue);
+    padding: 10px;
+    font-weight: 700;
+    color: var(--clr-accent);
+    text-align: center;
+    border: 5px solid var(--clr-black);
+    border-radius: 3px;
+    box-shadow: 5px 5px var(--clr-darkAccent);
+    transition: all 0.3s ease-in-out; 
+}
+
+button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: var(--clr-accent);
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: var(--clr-darkAccent);
+    transition: all 0.2s ease-in-out; 
+}
+ 
+body.dark-mode {
+    background-color: var(--clr-dark-bg);
+    color: var(--clr-dark-text);
+}
+
+body.dark-mode .item {
+    background-color: var(--clr-accent);
+    color: var(--clr-dark-text);
+    border: 5px solid var(--clr-dark-border);
+}
+
+body.dark-mode button {
+    background-color: var(--clr-darkAccent);
+    color: white;
+}
+
+body.dark-mode button:hover {
+    background-color: var(--clr-black);
+    transition: all 0.2s ease-in-out; 
+}
